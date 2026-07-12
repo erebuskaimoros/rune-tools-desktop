@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Workspace Boundary
+
+Read [../AGENTS.md](../AGENTS.md) for this repo's scope and [../../AGENTS.md](../../AGENTS.md) for the BooneTools umbrella. The primary BooneTools web/backend lives in `../../website`, the legacy web line in `../../RUNE-Tools`, and Asgardex is an independent wallet checkout outside BooneTools.
+
 ## Build and Development Commands
 
 - `npm run build` - Compile TypeScript to JavaScript in the dist/ directory
@@ -40,8 +44,8 @@ ipcMain.handle('handler-name', async (event, ...params) => {
 
 ### Key Configuration
 
-- THORChain RPC: `https://rpc.ninerealms.com/`
-- THORNode API: `https://thornode.ninerealms.com` (configurable in ThorchainApiService)
+- THORChain RPC: `https://gateway.liquify.com/chain/thorchain_rpc/`
+- THORNode API: `https://gateway.liquify.com/chain/thorchain_api` (configurable in ThorchainApiService)
 - Derivation path: `m/44'/931'/0'/0/0` (THORChain standard)
 - Address prefix: `thor`
 
